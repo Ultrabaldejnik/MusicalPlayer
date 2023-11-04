@@ -20,7 +20,7 @@ import com.example.musicalplayer.repository.MusicRepository
 import com.example.musicalplayer.repository.Track
 import java.lang.Exception
 
-
+//comment
 class MusicService : Service() {
 
     private val localBinder = LocalBinder()
@@ -71,10 +71,6 @@ class MusicService : Service() {
             initMediaPlayer()
         }
 
-    }
-
-    fun getCurrentMusic(): Track {
-        return musicRepository.getCurrent()
     }
 
     fun playNextTrack() {
